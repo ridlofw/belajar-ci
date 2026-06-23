@@ -15,7 +15,7 @@
                 <i class="bi bi-cart-check"></i>
                 <span>Keranjang</span>
             </a>
-        </li><!-- End Keranjang Nav --> 
+        </li><!-- End Keranjang Nav -->
         <?php
         if (session()->get('role') == 'admin') {
         ?>
@@ -27,7 +27,14 @@
             </li><!-- End Produk Nav -->
         <?php
         }
-        ?> 
+        ?>
+
+        <li class="nav-item">
+            <a class="nav-link <?php echo (uri_string() == 'history') ? "" : "collapsed" ?>" href="history">
+                <i class="bi bi-person"></i>
+                <span>History</span>
+            </a>
+        </li><!-- End History Nav -->
     </ul>
 
 </aside><!-- End Sidebar-->
